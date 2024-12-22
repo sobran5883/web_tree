@@ -17,11 +17,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex h-screen bg-[#a38fa3] w-full justify-center items-center">
+    <div className="flex h-screen bg-[#a38fa3] w-full justify-center items-center p-4">
       {data.map((user, index) => (
         <div
           key={index}
-          className="flex justify-center flex-col gap-4 p-6 border-2 border-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1)) w-96 h-52"
+          className="flex justify-center flex-col gap-4 p-6 border-2 border-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1)) w-96 md:h-52"
           style={{
             backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.9)), url(${bg1})`,
             backgroundSize: "cover",
@@ -29,7 +29,7 @@ const App = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="flex items-center justify-evenly text-[#00E0F2]">
+          <div className="flex flex-col py-2 md:flex-row items-center justify-evenly text-[#00E0F2]">
             <div className="border-2 border-[#737d7d]  bg-green-800 overflow-hidden">
               <img
                 className="w-32 h-32"
